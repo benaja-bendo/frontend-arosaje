@@ -4,7 +4,9 @@ import "../assets/style.css";
 import plantes from '../ressources/plantes.json';
 
 export const ShowPlant: FC = () => {
-  const { id } = useParams<{ id: string }>(); 
+  const { id } = useParams<{ id: string }>();
+
+    console.log('id', id)
 
   const plante = plantes.find(p => p.id === parseInt(id || '0', 10));
 
