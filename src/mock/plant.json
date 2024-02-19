@@ -1,0 +1,126 @@
+{
+    "success": true,
+    "message": "Plants retrieved successfully.",
+    "data": [
+    {
+    "id": 1,
+    "name": "Mandy Hudson Sr.",
+    "description": "Quos ut assumenda totam ex omnis fuga sit voluptas. Eos est facilis inventore dicta. Qui non dolores beatae laborum asperiores qui.",
+    "path_image": "https://via.placeholder.com/640x480.png/005511?text=ut",
+    "user_created": 4,
+    "date_begin": "1992-11-22",
+    "date_end": "1979-07-01",
+    "is_published": 1,
+    "created_at": "2024-02-18T12:11:46.000000Z",
+    "updated_at": "2024-02-18T12:11:46.000000Z"
+    },
+    {
+    "id": 2,
+    "name": "Mr. Vidal Conroy",
+    "description": "Aut ipsum voluptatem maxime dicta. Qui optio quia odio aliquam laudantium laboriosam. Unde quam eum enim repellat unde in dignissimos.",
+    "path_image": "https://via.placeholder.com/640x480.png/0033ee?text=quia",
+    "user_created": 4,
+    "date_begin": "2005-05-08",
+    "date_end": "2004-07-23",
+    "is_published": 0,
+    "created_at": "2024-02-18T12:11:46.000000Z",
+    "updated_at": "2024-02-18T12:11:46.000000Z"
+    },
+    {
+    "id": 3,
+    "name": "Flo Becker",
+    "description": "Dolorem perferendis velit nesciunt nihil dolor ea. Saepe nulla sint facere quam ea deleniti. Ea animi similique nostrum.",
+    "path_image": "https://via.placeholder.com/640x480.png/0011ee?text=excepturi",
+    "user_created": 2,
+    "date_begin": "2006-10-20",
+    "date_end": "1988-01-11",
+    "is_published": 0,
+    "created_at": "2024-02-18T12:11:46.000000Z",
+    "updated_at": "2024-02-18T12:11:46.000000Z"
+    },
+    {
+    "id": 4,
+    "name": "Mrs. Alvena Raynor",
+    "description": "Autem facilis corporis earum ducimus dicta dolore. Labore repellendus aliquid fugit dignissimos. Alias temporibus aliquid deleniti nihil.",
+    "path_image": "https://via.placeholder.com/640x480.png/0088ee?text=voluptatem",
+    "user_created": 4,
+    "date_begin": "2019-10-17",
+    "date_end": "1997-08-23",
+    "is_published": 0,
+    "created_at": "2024-02-18T12:11:46.000000Z",
+    "updated_at": "2024-02-18T12:11:46.000000Z"
+    },
+    {
+    "id": 5,
+    "name": "Ivah Bernhard",
+    "description": "Est harum ad consequatur officiis velit qui. Et soluta et non omnis hic. Quia dolor eum magnam vel odit. Amet velit architecto illo ipsa.",
+    "path_image": "https://via.placeholder.com/640x480.png/002266?text=molestiae",
+    "user_created": 9,
+    "date_begin": "2016-11-09",
+    "date_end": "1998-10-17",
+    "is_published": 0,
+    "created_at": "2024-02-18T12:11:46.000000Z",
+    "updated_at": "2024-02-18T12:11:46.000000Z"
+    },
+    {
+    "id": 6,
+    "name": "Ana Langworth",
+    "description": "Ut tempora dolor dignissimos eos corrupti culpa eum. Ea cumque eaque et ea aut incidunt. Et laboriosam rerum sint eius labore ea odio. Rerum ipsam voluptatem ipsam et.",
+    "path_image": "https://via.placeholder.com/640x480.png/00ff55?text=consequuntur",
+    "user_created": 10,
+    "date_begin": "1974-08-22",
+    "date_end": "2019-01-15",
+    "is_published": 0,
+    "created_at": "2024-02-18T12:11:46.000000Z",
+    "updated_at": "2024-02-18T12:11:46.000000Z"
+    },
+    {
+    "id": 7,
+    "name": "Dr. Seamus Howe",
+    "description": "Atque et blanditiis aliquid eos eos esse corporis. Modi optio nesciunt quaerat reiciendis aut. Quaerat minus soluta ut.",
+    "path_image": "https://via.placeholder.com/640x480.png/00cc88?text=ut",
+    "user_created": 2,
+    "date_begin": "2015-03-22",
+    "date_end": "2018-10-07",
+    "is_published": 0,
+    "created_at": "2024-02-18T12:11:46.000000Z",
+    "updated_at": "2024-02-18T12:11:46.000000Z"
+    },
+    {
+    "id": 8,
+    "name": "Angela Mante I",
+    "description": "At et optio pariatur assumenda eos vitae. Sit omnis quae eveniet neque delectus quis nostrum. A accusantium maxime eligendi et temporibus ex aut. Reiciendis dolores est optio.",
+    "path_image": "https://via.placeholder.com/640x480.png/00cc22?text=et",
+    "user_created": 8,
+    "date_begin": "1971-12-11",
+    "date_end": "1977-09-06",
+    "is_published": 1,
+    "created_at": "2024-02-18T12:11:46.000000Z",
+    "updated_at": "2024-02-18T12:11:46.000000Z"
+    },
+    {
+    "id": 9,
+    "name": "Jean Nader",
+    "description": "Delectus ut cupiditate et nesciunt. Cupiditate nobis sed minima modi ea. Architecto nihil soluta architecto sit.",
+    "path_image": "https://via.placeholder.com/640x480.png/004433?text=sunt",
+    "user_created": 9,
+    "date_begin": "1976-09-17",
+    "date_end": "1992-04-26",
+    "is_published": 0,
+    "created_at": "2024-02-18T12:11:46.000000Z",
+    "updated_at": "2024-02-18T12:11:46.000000Z"
+    },
+    {
+    "id": 10,
+    "name": "Ambrose Ondricka",
+    "description": "Iure possimus et natus in necessitatibus velit. Quod expedita commodi iste hic dolor eligendi eos. Minima reprehenderit consequatur eligendi vel dolorum nihil.",
+    "path_image": "https://via.placeholder.com/640x480.png/00cc44?text=quibusdam",
+    "user_created": 4,
+    "date_begin": "1993-12-25",
+    "date_end": "1996-08-17",
+    "is_published": 1,
+    "created_at": "2024-02-18T12:11:46.000000Z",
+    "updated_at": "2024-02-18T12:11:46.000000Z"
+    }
+    ]
+    }
