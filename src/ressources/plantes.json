@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "image": "./monstera.jpeg",
+        "titre": "Monstera Deliciosa",
+        "adresse": "Forêts tropicales d'Amérique du Sud",
+        "details": "La Monstera Deliciosa, connue pour ses grandes feuilles trouées, est une plante d'intérieur populaire qui prospère dans un environnement lumineux indirect. Elle préfère un arrosage modéré, permettant à son sol de sécher partiellement entre les arrosages."
+    },
+    {
+        "id": 2,
+        "image": "./ficus-lyrata.jpeg",
+        "titre": "Ficus Lyrata",
+        "adresse": "Afrique de l'Ouest",
+        "details": "Le Ficus Lyrata, ou figuier lyre, est apprécié pour ses grandes feuilles vertes brillantes en forme de violon. Il nécessite beaucoup de lumière naturelle et un arrosage régulier, avec un drainage adéquat pour éviter de pourrir les racines."
+    },
+    {
+        "id": 3,
+        "image": "./snake-plant.jpeg",
+        "titre": "Sansevieria Trifasciata",
+        "adresse": "Afrique de l'Ouest",
+        "details": "Communément appelée 'plante serpent', la Sansevieria Trifasciata est réputée pour sa facilité de soin et sa capacité à purifier l'air. Elle supporte bien la lumière faible et l'arrosage sporadique, ce qui en fait une excellente plante d'intérieur pour les débutants."
+    }
+]

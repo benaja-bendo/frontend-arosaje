@@ -4,6 +4,7 @@ import {
  } from "react-router-dom";
  import { Error404 } from "../pages/Error404";
  import UserProfilePage from "../pages/Profile/UserProfilePage";
+        import { ShowPlant } from "../pages/ShowPlant";
  import Layout from "../Layout";
  
  const routes: RouteObject[] = [
@@ -14,6 +15,10 @@ import {
     {
         path: "*",
         element: <Layout><Error404/></Layout>,
+    },
+     {
+    path: "/plantes/:id",
+    element: <ShowPlant/>,
     },
     {
         path: "/profil-user",
