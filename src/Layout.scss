@@ -8,17 +8,19 @@
   }
    .content {
     flex-grow: 1;
+     padding: 18px;
   }
    @media screen and (min-width: 600px) {
     .layout {
       flex-direction: row;
     }
      .sidebar {
-      width: 200px;
+      max-width: 200px;
       order: 1;
     }
      .content {
       order: 2;
+       padding: 18px;
     }
   }
  
