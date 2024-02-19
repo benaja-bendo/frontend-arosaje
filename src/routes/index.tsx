@@ -6,11 +6,12 @@ import {
  import UserProfilePage from "../pages/Profile/UserProfilePage";
         import { ShowPlant } from "../pages/ShowPlant";
  import Layout from "../Layout";
+        import {Home}  from "../pages/Home";
  
  const routes: RouteObject[] = [
     {
         path: "/",
-        element: <Layout><p></p></Layout>,
+        element: <Layout><Home /></Layout>,
     },
     {
         path: "*",
