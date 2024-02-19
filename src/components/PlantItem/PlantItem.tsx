@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import {Link} from "react-router-dom";
 //import { PlantItemWrapper } from './PlantItem.styled';
 //import CareScale from '../CareScale/CareScale';
 
@@ -24,7 +25,7 @@ const PlantItem: FC<PlantItemProps> = ({ plantData }) => {
          <div className="p-5">
             <p className="text-medium mb-5 text-gray-700">{plantData.description}</p>
             {/*add other line */}
-            <button className="w-full rounded-md bg-indigo-600  py-2 text-indigo-100 hover:bg-indigo-500 hover:shadow-md duration-75">Ajouter</button>
+            <Link to={`/plantes/${plantData.id}`} className="w-full block text-center rounded-md bg-indigo-600  py-2 text-indigo-100 hover:bg-indigo-500 hover:shadow-md duration-75">voir</Link>
          </div>
       </div>
    )
