@@ -1,0 +1,25 @@
+.user-profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+   .profile-picture {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+  }
+   .user-details {
+    text-align: center;
+  }
+   .user-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+   .user-age, .user-occupation, .user-type, .user-care {
+    font-size: 16px;
+    margin-bottom: 5px;
+  } 
+ 
