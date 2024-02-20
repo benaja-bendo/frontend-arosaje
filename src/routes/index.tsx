@@ -66,7 +66,7 @@ const routes: RouteObject[] = [
             },
             {
                 path: "logout",
-                loader: async () => {
+                action: async () => {
                     try {
                         await AuthService.signout();
                         return redirect('/');
