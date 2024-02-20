@@ -11,7 +11,7 @@ import {loginAction, LoginPage} from "@/pages/login/loginPage.tsx";
 import AuthService from "@/services/authService.ts";
 import {ResponseThrow} from "@/types/ResponseThrow.ts";
 import {AxiosError} from "axios";
-import { Messagerie } from "../pages/messagerie";
+import {Messagerie} from "../pages/messagerie";
 
 
 const routes: RouteObject[] = [
@@ -42,10 +42,10 @@ const routes: RouteObject[] = [
                 path: "/profil-user",
                 Component: UserProfilePage,
             },
-          {
-        path: "/messagerie",
-        element: <Layout><Messagerie/></Layout>,
-          }
+            {
+                path: "/messagerie",
+                Component: Messagerie,
+            }
         ],
     },
     {
