@@ -16,7 +16,7 @@ export const ShowPlant: FC = () => {
 
     return (
         <div className="">
-            {plant && <div className="m-8 grid grid-cols-2 gap-4 place-content-center h-48">
+            {plant && <div className="m-8">
                 <div>
                     <img className="float-left" src={plant.path_image} alt={plant.name}/>
                 </div>
