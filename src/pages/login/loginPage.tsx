@@ -69,7 +69,6 @@ export const loginAction = async ({request}: ActionFunctionArgs) => {
     };
     // Validate the form data.
     if (!email || !password) {
-        // TODO: translate this error message
         return {
             error: "You must provide a email to log in",
         };
@@ -78,7 +77,6 @@ export const loginAction = async ({request}: ActionFunctionArgs) => {
     try {
         await AuthService.signin(email, password);
     } catch (error) {
-        // TODO: translate this error message
         const err = error as AxiosError;
         throw json<ResponseThrow>({
             message: err.message,
