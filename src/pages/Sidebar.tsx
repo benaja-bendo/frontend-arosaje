@@ -2,10 +2,12 @@
 import {Link} from "react-router-dom";
 import {useEffect, useState} from "react";
 import "./Sidebar.scss";
+import {useCurrentUser} from "@/hook/use-current-user.ts";
 
 
 const Sidebar = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+    const {currentUser} = useCurrentUser();
 
 
     useEffect(() => {
@@ -46,7 +48,7 @@ const Sidebar = () => {
                 <li className="sidebar-menu-item">
                     <Link to="/profil-user" className="flex items-center">
                         <img className="logo" src="./src/assets/profil.png" alt="profil"/>
-                        <strong> Profil Utilisateur </strong>
+                        <strong> {currentUser?.name} </strong>
                     </Link>
                 </li>
                 <li className="sidebar-menu-item">
