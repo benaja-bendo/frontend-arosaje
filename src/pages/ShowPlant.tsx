@@ -1,6 +1,5 @@
 import {FC, useEffect, useState} from "react";
 import {useParams} from "react-router-dom";
-import "../assets/style.css";
 import HttpService from "@/services/HttpService.ts";
 import configRoutes from "@/utils/config-routes.ts";
 
@@ -16,22 +15,22 @@ export const ShowPlant: FC = () => {
 
 
     return (
-        <div className="container">
-            {plant && <div className="gauche">
-                <img src={plant.path_image} alt={plant.name}/>
-                <h2>{plant.name}</h2>
-                <p>{plant.description}</p>
-                <button>Contacter</button>
-            </div>}
-            {/*<div className="gauche">*/}
-            {/*    <img src={plant} alt={plant.name}/>*/}
-            {/*</div>*/}
+        <div className="">
+            {plant && <div className="m-8 grid grid-cols-2 gap-4 place-content-center h-48">
+                <div>
+                    <img className="float-left" src={plant.path_image} alt={plant.name}/>
+                </div>
+                
+                <div className="">
+                    <h2 className="text-5xl font-extrabold dark:text-black">{plant.name}</h2>
+                    <p className="m-8">{plant.description}</p>
+                    <a href="../messagerie" className="-mt-2 text-md font-bold text-white bg-black rounded-full px-5 py-2">Contacter</a>
 
-            {/*<div className="droite">*/}
-            {/*    <h2>{plant.name}</h2>*/}
-            {/*    <p>{plant.description}</p>*/}
-            {/*    <button>Contacter</button>*/}
-            {/*</div>*/}
+                </div>
+                
+
+        </div>}
+          
 
 
         </div>
