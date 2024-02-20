@@ -1,5 +1,5 @@
 import {
-    createBrowserRouter,
+    createBrowserRouter, json, LoaderFunctionArgs, Outlet, redirect,
     RouteObject,
 } from "react-router-dom";
 import {Error404} from "../pages/Error404";
@@ -7,24 +7,84 @@ import UserProfilePage from "../pages/Profile/UserProfilePage";
 import {ShowPlant} from "../pages/ShowPlant";
 import Layout from "../Layout";
 import {Home} from "../pages/Home";
+import {loginAction, LoginPage} from "@/pages/login/loginPage.tsx";
+import AuthService from "@/services/authService.ts";
+import {ResponseThrow} from "@/types/ResponseThrow.ts";
+import {AxiosError} from "axios";
 
 const routes: RouteObject[] = [
     {
-        path: "/",
-        element: <Layout><Home/></Layout>,
+        id: "main",
+        path: "",
+        loader: ({request}: LoaderFunctionArgs) => {
+            if (!AuthService.isAuthenticated) {
+                const params = new URLSearchParams();
+                params.set("from", new URL(request.url).pathname);
+                return redirect("/auth/login?" + params.toString());
+            }
+            return null;
+        },
+        element: <Layout/>,
+        hasErrorBoundary: true,
+        children: [
+            {
+                index: true,
+                path: "/",
+                Component: Home,
+            },
+            {
+                path: "/plantes/:id",
+                Component: ShowPlant,
+            },
+            {
+                path: "/profil-user",
+                Component: UserProfilePage,
+            },
+        ],
+    },
+    {
+        id: "auth",
+        path: "/auth",
+        element: <><Outlet/></>,
+        loader: () => {
+            if (AuthService.isAuthenticated) {
+                return redirect("/");
+            }
+            return null;
+        },
+        children: [
+            {
+                path: 'login',
+                element: <LoginPage/>,
+                loader: () => {
+                    if (AuthService.isAuthenticated) {
+                        return redirect("/");
+                    }
+                    return null;
+                },
+                action: loginAction,
+            },
+            {
+                path: "logout",
+                loader: async () => {
+                    try {
+                        await AuthService.signout();
+                        return redirect('/');
+                    } catch (error) {
+                        const err = error as AxiosError;
+                        throw json<ResponseThrow>({
+                            message: err.message,
+                        }, 401);
+                    }
+                }
+            },
+        ],
     },
     {
         path: "*",
-        element: <Layout><Error404/></Layout>,
-    },
-    {
-        path: "/plantes/:id",
-        element: <Layout><ShowPlant/></Layout>,
-    },
-    {
-        path: "/profil-user",
-        element: <Layout><UserProfilePage/></Layout>,
+        element: <Error404/>,
     }
+
 ];
 
 export const Router = createBrowserRouter(routes, {
