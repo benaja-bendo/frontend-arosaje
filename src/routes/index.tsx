@@ -7,6 +7,7 @@ import UserProfilePage from "../pages/Profile/UserProfilePage";
 import {ShowPlant} from "../pages/ShowPlant";
 import Layout from "../Layout";
 import {Home} from "../pages/Home";
+import { Messagerie } from "../pages/messagerie";
 
 const routes: RouteObject[] = [
     {
@@ -24,6 +25,10 @@ const routes: RouteObject[] = [
     {
         path: "/profil-user",
         element: <Layout><UserProfilePage/></Layout>,
+    },
+    {
+        path: "/messagerie",
+        element: <Layout><Messagerie/></Layout>,
     }
 ];
 
