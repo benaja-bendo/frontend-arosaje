@@ -51,6 +51,12 @@ const Sidebar = () => {
                         <strong> {currentUser?.name} </strong>
                     </Link>
                 </li>
+                <li className="sidebar-menu-item">
+                    <Link to="/messagerie" className="flex items-center">
+                        <img className="logo" src="./src/assets/messagerie.png" alt="messagerie"/>
+                        <strong> Ma Messagerie </strong>
+                    </Link>
+                </li>
             </ul>
         </div>
     );
