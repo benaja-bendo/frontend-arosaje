@@ -38,7 +38,7 @@ const PlantItem: FC<PlantItemProps> = ({ plantData }) => {
                     <strong className="text-medium text-gray-700">{plantData.date_end}</strong>
                 </p>
             </div>
-            <Link to={`/plantes/${plantData.id}`} className="w-full block text-center rounded-md bg-indigo-600  py-2 text-indigo-100 hover:bg-indigo-500 hover:shadow-md duration-75">voir</Link>
+            <Link to={`/plantes/${plantData.id}`} className="w-full block text-center rounded-md bg-indigo-600  py-2 text-indigo-100 hover:bg-indigo-500 hover:shadow-md duration-75">Contact</Link>
          </div>
       </div>
    )

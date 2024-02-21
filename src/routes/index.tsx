@@ -13,6 +13,7 @@ import {ResponseThrow} from "@/types/ResponseThrow.ts";
 import {AxiosError} from "axios";
 import {Messagerie} from "@/pages/Messagerie.tsx";
 import {registerAction, RegisterPage} from "@/pages/register/registerPage.tsx";
+import {MyPlant} from "@/pages/MyPlant.tsx";
 
 
 const routes: RouteObject[] = [
@@ -38,6 +39,10 @@ const routes: RouteObject[] = [
             {
                 path: "/plantes/:id",
                 Component: ShowPlant,
+            },
+            {
+                path: "/my-plantes",
+                Component: MyPlant,
             },
             {
                 path: "/profil-user",
