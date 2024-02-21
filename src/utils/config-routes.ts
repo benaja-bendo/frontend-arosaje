@@ -5,6 +5,7 @@ export interface Route {
     plants: {
         getAll: string;
         show: (id: number) => string;
+        me: (id: number) => string;
     };
 }
 
@@ -14,7 +15,8 @@ const configRoutes: Route = {
     register: import.meta.env.VITE_API_ROUTE_REGISTER || '/register',
     plants: {
         getAll: import.meta.env.VITE_API_ROUTE_PLANTS_GET_ALL || '/plants',
-        show: (id: number) =>`/plants/${id}`
+        show: (id: number) => `/plants/${id}`,
+        me: (id: number) => `/plants/me/${id}`,
     }
 };
 
