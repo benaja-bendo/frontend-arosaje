@@ -15,6 +15,7 @@ import {Messagerie} from "@/pages/Messagerie.tsx";
 import {registerAction, RegisterPage} from "@/pages/register/registerPage.tsx";
 import {MyPlant} from "@/pages/MyPlant.tsx";
 import {AddPlant} from "@/pages/AddPlant.tsx";
+import {Faq} from "@/pages/Faq.tsx";
 
 
 const routes: RouteObject[] = [
@@ -56,6 +57,10 @@ const routes: RouteObject[] = [
             {
                 path: "/messagerie",
                 Component: Messagerie,
+            },
+            {
+                path: "/faq",
+                Component: Faq,
             }
         ],
     },
