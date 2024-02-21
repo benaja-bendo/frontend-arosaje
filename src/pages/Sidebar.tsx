@@ -57,6 +57,12 @@ const Sidebar = () => {
                         <strong> Ma Messagerie </strong>
                     </Link>
                 </li>
+                <li className="sidebar-menu-item">
+                    <Link to="/faq" className="flex items-center">
+                        <img className="logo" src="./src/assets/faq.png" alt="faq"/>
+                        <strong> FAQ </strong>
+                    </Link>
+                </li>
             </ul>
         </div>
     );
