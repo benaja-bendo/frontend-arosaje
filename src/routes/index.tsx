@@ -11,7 +11,8 @@ import {loginAction, LoginPage} from "@/pages/login/loginPage.tsx";
 import AuthService from "@/services/authService.ts";
 import {ResponseThrow} from "@/types/ResponseThrow.ts";
 import {AxiosError} from "axios";
-import {Messagerie} from "../pages/messagerie";
+import {Messagerie} from "@/pages/Messagerie.tsx";
+import {registerAction, RegisterPage} from "@/pages/register/registerPage.tsx";
 
 
 const routes: RouteObject[] = [
@@ -69,6 +70,11 @@ const routes: RouteObject[] = [
                     return null;
                 },
                 action: loginAction,
+            },
+            {
+                path: 'register',
+                element: <RegisterPage/>,
+                action: registerAction,
             },
             {
                 path: "logout",
