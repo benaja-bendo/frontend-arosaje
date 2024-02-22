@@ -16,8 +16,13 @@ const [data, setData] = useState(null);
     }, []);
     return (<>
             <div className="flex flex-col ">
+                <div className="p-3">
+                    <h1 className="text-5xl font-bold text-center">Arosage</h1>
                 <Category/>
+                </div>
+                <div className="p-3">
                 {data && <ShoppingList plantsData= {data}/>}
+                </div>
             </div>
     </>);
 };

@@ -17,7 +17,7 @@ const UserProfilePage = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link to="/plants" className="flex items-center hover:bg-green-500 hover:text-white p-2 rounded-lg transition duration-300">
+                        <Link to="/my-plantes" className="flex items-center hover:bg-green-500 hover:text-white p-2 rounded-lg transition duration-300">
                             <img className="logo" src="./src/assets/plante.png" alt="plante"/>
                             <strong> Mes Plantes </strong>
                         </Link>

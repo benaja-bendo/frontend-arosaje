@@ -6,18 +6,14 @@ interface CategoryProps {
 }
 
 const Category: FC<CategoryProps> = () => (
- 
-    <div className="category flex items-center">
-      {/* Filtre par type de plante */}
-      <select>
-        <option value="interieur">Intérieur</option>
-        <option value="exterieur">Extérieur</option>
-      </select>
-      
-      {/* Bouton Réinitialiser */}
-      <button>Réinitialiser</button>
-    </div>
- 
+<div className="flex items-center">
+  <input
+  type="search"
+  placeholder="Rechercher..."
+  onChange={(e) => console.log(e.target.value)}
+  className="w-full px-3 py-2 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:shadow-outline border"
+/>
+</div>
 );
 
 export default Category;

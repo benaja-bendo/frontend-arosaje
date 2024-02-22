@@ -7,8 +7,9 @@ import {ResponseApi} from "@/types/ResponseApi.ts";
 interface AuthServiceProps {
     isAuthenticated: boolean;
     user: object | Tuser;
-    signin(email: string, password: string,school_name: string): Promise<void>;
+    signin(email: string, password: string): Promise<void>;
     signout(): Promise<void>;
+    register(email: string, password: string, name: string): Promise<void>;
 }
 
 class AuthService implements AuthServiceProps {
@@ -48,6 +49,21 @@ class AuthService implements AuthServiceProps {
                 localStorage.removeItem('tenant_id');
             } else {
                 console.error('Sign out failed');
+            }
+        } catch (error) {
+            console.error(error);
+            throw error;
+        }
+    }
+    async   register(email: string, password: string, name: string) {
+        try {
+            const response = await HttpService.post<ResponseApi<ResponseLoginAction>>(config.api.routes.register, { email, password, name });
+            if (response.status === 200) {
+                const { token, user } = response.data.data;
+                localStorage.setItem('token', token);
+                localStorage.setItem('user', JSON.stringify(user));
+            } else {
+                console.error('Authentication failed');
             }
         } catch (error) {
             console.error(error);

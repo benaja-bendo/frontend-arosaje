@@ -11,7 +11,11 @@ import {loginAction, LoginPage} from "@/pages/login/loginPage.tsx";
 import AuthService from "@/services/authService.ts";
 import {ResponseThrow} from "@/types/ResponseThrow.ts";
 import {AxiosError} from "axios";
-import {Messagerie} from "../pages/messagerie";
+import {Messagerie} from "@/pages/Messagerie.tsx";
+import {registerAction, RegisterPage} from "@/pages/register/registerPage.tsx";
+import {MyPlant} from "@/pages/MyPlant.tsx";
+import {AddPlanAction, AddPlant} from "@/pages/AddPlant.tsx";
+import {Faq} from "@/pages/Faq.tsx";
 
 
 const routes: RouteObject[] = [
@@ -39,12 +43,24 @@ const routes: RouteObject[] = [
                 Component: ShowPlant,
             },
             {
+                path: "/my-plantes",
+                Component: MyPlant,
+            },
+            {
+                path: "/add-plant",
+                Component: AddPlant,
+            },
+            {
                 path: "/profil-user",
                 Component: UserProfilePage,
             },
             {
                 path: "/messagerie",
                 Component: Messagerie,
+            },
+            {
+                path: "/faq",
+                Component: Faq,
             }
         ],
     },
@@ -69,6 +85,11 @@ const routes: RouteObject[] = [
                     return null;
                 },
                 action: loginAction,
+            },
+            {
+                path: 'register',
+                element: <RegisterPage/>,
+                action: registerAction,
             },
             {
                 path: "logout",
