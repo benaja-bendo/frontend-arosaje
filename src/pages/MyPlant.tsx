@@ -39,11 +39,10 @@ export const MyPlant: FC = () => {
 
 function ListOfPlant() {
     const {currentUser} = useCurrentUser();
-    console.log(currentUser)
     const [data, setData] = useState([] as PlantType[]);
     const handleFetch = async () => {
         if (!currentUser) return;
-        const res = await HttpService.get(configRoutes.plants.me(parseInt(currentUser?.id)));
+        const res = await HttpService.get(configRoutes.plants.me(parseInt(currentUser?.id))) as {data: {data: PlantType[]}};
         setData(res.data.data);
     }
     useEffect(() => {

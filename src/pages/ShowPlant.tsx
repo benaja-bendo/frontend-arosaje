@@ -1,10 +1,13 @@
 import {FC, useEffect, useState} from "react";
-import {useParams} from "react-router-dom";
+import {useNavigate, useParams} from "react-router-dom";
 import HttpService from "@/services/HttpService.ts";
 import configRoutes from "@/utils/config-routes.ts";
+import {useCurrentUser} from "@/hook/use-current-user.ts";
 
 export const ShowPlant: FC = () => {
     const {id} = useParams<{ id: string }>();
+    const navigate = useNavigate();
+    const {currentUser} = useCurrentUser();
     const [plant, setPlant] = useState(null);
 
     useEffect(() => {
@@ -12,23 +15,21 @@ export const ShowPlant: FC = () => {
     }, [id]);
     const LoadShowPlant = async (id: number) => await HttpService.get(configRoutes.plants.show(id));
 
-
+    const handleContact = async () => {
+        alert('Contactez le propriétaire pour garder la plante');
+        if (!currentUser) {
+            alert('Vous devez être connecté pour contacter le propriétaire');
+            return;
+        }
+        const res = await HttpService.post(configRoutes.demand.create(parseInt(id || '0', 10)), {
+            user_id: currentUser.id,
+            plant_id: parseInt(id || '0', 10)
+        });
+        if (res.status === 200) {
+            navigate('/messagerie');
+        }
+    }
     return (<>
-        {/*<div className="">*/}
-        {/*    {plant && <div className="m-8">*/}
-        {/*        <div>*/}
-        {/*            <img className="float-left" src={plant.path_image} alt={plant.name}/>*/}
-        {/*        </div>*/}
-
-        {/*        <div className="">*/}
-        {/*            <h2 className="text-5xl font-extrabold dark:text-black">{plant.name}</h2>*/}
-        {/*            <p className="m-8">{plant.description}</p>*/}
-        {/*            <a href="../messagerie"*/}
-        {/*               className="-mt-2 text-md font-bold text-white bg-black rounded-full px-5 py-2">Contacter</a>*/}
-        {/*        </div>*/}
-
-        {/*    </div>}*/}
-        {/*</div>*/}
         <div className="container mx-auto">
             {plant && <div className="flex flex-col md:flex-row p-8 gap-8">
                 <div className="flex-1">
@@ -62,10 +63,10 @@ export const ShowPlant: FC = () => {
                             <li key={index}>{tip.content}</li>
                         ))}
                     </ul>
-                    <a href="../messagerie"
-                       className="w-full mt-8 inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-black rounded-lg hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800">
+                    <button onClick={handleContact} type={"button"}
+                            className="w-full mt-8 inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-black rounded-lg hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800">
                         Contacter pour garder
-                    </a>
+                    </button>
                 </div>
             </div>}
         </div>
