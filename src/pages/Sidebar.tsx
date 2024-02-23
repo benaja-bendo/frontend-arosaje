@@ -1,12 +1,11 @@
 // Sidebar
 import {Link} from "react-router-dom";
-import {useEffect, useState} from "react";
+import {useEffect} from "react";
 import "./Sidebar.scss";
 import {useCurrentUser} from "@/hook/use-current-user.ts";
 
 
 const Sidebar = () => {
-    const [isSidebarOpen, setIsSidebarOpen] = useState(true);
     const {currentUser} = useCurrentUser();
 
 
@@ -20,44 +19,37 @@ const Sidebar = () => {
             }
         };
 
-
         window.addEventListener('resize', handleResize);
-
 
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
 
-    const toggleSidebar = () => {
-        setIsSidebarOpen(!isSidebarOpen);
-    };
-
-
     return (
         <div className="sidebar">
-            <button className="toggle-button" onClick={toggleSidebar}>
+            <button className="toggle-button">
             </button>
             <ul className="sidebar-menu">
                 <li className="sidebar-menu-item">
-                    <Link to="/" className="flex items-center">
-                        <img className="logo" src="./src/assets/homee.svg" alt="home"/>
+                    <Link to="/" className="flex items-center" style={{gap: "10px"}}>
+                        <img className="logo" src="./src/assets/home.svg" alt="home"/>
                         <strong>Accueil</strong>
                     </Link>
                 </li>
                 <li className="sidebar-menu-item">
-                    <Link to="/profil-user" className="flex items-center">
+                    <Link to="/profil-user" className="flex items-center" style={{gap: "10px"}}>
                         <img className="logo" src="./src/assets/profile.svg" alt="profil"/>
                         <strong> {currentUser?.name} </strong>
                     </Link>
                 </li>
                 <li className="sidebar-menu-item">
-                    <Link to="/messagerie" className="flex items-center">
+                    <Link to="/messagerie" className="flex items-center" style={{gap: "10px"}}>
                         <img className="logo" src="./src/assets/mail.svg" alt="messagerie"/>
                         <strong> Ma Messagerie </strong>
                     </Link>
                 </li>
                 <li className="sidebar-menu-item">
-                    <Link to="/faq" className="flex items-center">
+                    <Link to="/faq" className="flex items-center" style={{gap: "10px"}}>
                         <img className="logo" src="./src/assets/faqq.svg" alt="faq"/>
                         <strong> FAQ </strong>
                     </Link>
