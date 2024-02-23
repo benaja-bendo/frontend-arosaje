@@ -3,6 +3,7 @@ import ShoppingList from "../components/ShoppingList/ShoppingList";
 import Category from "../components/Category/Category";
 import HttpService from "@/services/HttpService.ts";
 import configRoutes from "@/utils/config-routes.ts";
+import Footer from "@/components/Footer/Footer";
 
 
 export const Home: FC = () => {
@@ -24,5 +25,6 @@ const [data, setData] = useState(null);
                 {data && <ShoppingList plantsData= {data}/>}
                 </div>
             </div>
+            <Footer/>
     </>);
 };
