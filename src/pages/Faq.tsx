@@ -5,7 +5,8 @@ import QAToggleItem from "../components/QAToggleItem/QAToggleItem";
 
 export const Faq: FC = () => {
  return <div className="">
-    <h1 className="text-5xl font-bold text-center">Frequently Asked Questions</h1>
+    <h1 className="text-5xl font-bold text-center"
+        style={{margin: "18px"}}>Frequently Asked Questions</h1>
      <Category/>
      <hr className="my-8"/>
      <p className="text-3xl font-medium">Questions : </p>
@@ -19,15 +20,11 @@ export const Faq: FC = () => {
      
      <hr className="my-8"/>
      <div className="">
-        <h2 className="text-2xl font-bold text-gray-800 py-2.5">À noter</h2>
+        <h2 className="text-2xl font-bold text-gray-800 py-2.5">Note</h2>
         <p>
-        Nous tenons à vous rappeler de faire preuve de prudence lors de vos interactions. Comme dans toute communauté en ligne, il est important de rester vigilant(e) et de signaler toute activité suspecte. Certaines personnes peuvent ne pas avoir des intentions honnêtes, et votre vigilance contribue à maintenir un environnement sûr pour tous les membres. N'hésitez pas à nous informer si vous rencontrez des comportements inappropriés ou des activités douteuses. Ensemble, nous pouvons garantir une expérience positive pour l'ensemble de la communauté.        <hr className="my-8"/>
-        <p className="font-medium">Si vous avez des questions, veuillez nous contacter à l'adresse hello@plantshop.com.
-
-
-
-
-</p>
+        Les commandes sont traitées dans l'ordre de leur réception. Les produits sont limités et la disponibilité est indiquée sur le site. Nous ferons de notre mieux pour maintenir la disponibilité des produits aussi à jour que possible, en ajoutant de nouveaux produits au fur et à mesure de leur réception dans la boutique. Parfois, notre inventaire est épuisé et nous vous contacterons si quelque chose n'est pas disponible dans votre commande. Revenez régulièrement pour les mises à jour des produits !
+        <hr className="my-8"/>
+        <p className="font-medium">If you have any questions please contact us at hello@plantshop.com</p>
         </p>
      </div>
 

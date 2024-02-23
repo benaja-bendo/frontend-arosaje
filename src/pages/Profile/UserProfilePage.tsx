@@ -6,7 +6,8 @@ const UserProfilePage = () => {
     return (
         <div className="grid h-full">
             <nav>
-                <ul className="flex gap-1 pb-2 border-b-2">
+                <ul className="flex gap-1"
+                    style={{borderRadius: "18px", border: "1px solid #22c55e"}}>
                     <li>
                         <Link to="/profil-user" className="flex items-center hover:bg-green-500 hover:text-white p-2 rounded-lg transition duration-300">
                             <svg className="logo" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
