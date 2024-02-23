@@ -6,7 +6,6 @@ import {useCurrentUser} from "@/hook/use-current-user.ts";
 
 
 const Sidebar = () => {
-    const [isSidebarOpen, setIsSidebarOpen] = useState(true);
     const {currentUser} = useCurrentUser();
 
 
@@ -28,38 +27,32 @@ const Sidebar = () => {
     }, []);
 
 
-    const toggleSidebar = () => {
-        setIsSidebarOpen(!isSidebarOpen);
-    };
-
-
     return (
-        <div className={`sidebar ${isSidebarOpen ? 'open' : 'closed'}`}>
-            <button className="toggle-button" onClick={toggleSidebar}>
-                {isSidebarOpen ? 'Fermer' : 'Ouvrir'}
+        <div className="sidebar">
+            <button className="toggle-button">
             </button>
             <ul className="sidebar-menu">
                 <li className="sidebar-menu-item">
                     <Link to="/" className="flex items-center">
-                        <img className="logo" src="./src/assets/home.png" alt="home"/>
+                        <img className="logo" src="./src/assets/home.svg" alt="home"/>
                         <strong>Accueil</strong>
                     </Link>
                 </li>
                 <li className="sidebar-menu-item">
                     <Link to="/profil-user" className="flex items-center">
-                        <img className="logo" src="./src/assets/profil.png" alt="profil"/>
+                        <img className="logo" src="./src/assets/profile.svg" alt="profil"/>
                         <strong> {currentUser?.name} </strong>
                     </Link>
                 </li>
                 <li className="sidebar-menu-item">
                     <Link to="/messagerie" className="flex items-center">
-                        <img className="logo" src="./src/assets/messagerie.png" alt="messagerie"/>
+                        <img className="logo" src="./src/assets/mail.svg" alt="messagerie"/>
                         <strong> Ma Messagerie </strong>
                     </Link>
                 </li>
                 <li className="sidebar-menu-item">
                     <Link to="/faq" className="flex items-center">
-                        <img className="logo" src="./src/assets/faq.png" alt="faq"/>
+                        <img className="logo" src="./src/assets/faq.svg" alt="faq"/>
                         <strong> FAQ </strong>
                     </Link>
                 </li>
