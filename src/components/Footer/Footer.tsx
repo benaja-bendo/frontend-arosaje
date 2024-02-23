@@ -19,9 +19,9 @@ const Footer: FC<FooterProps> = () => {
 	};
 	return (
 	
-	<footer className="bg-white  bg-green-900" style={{background:"#0d4b24", borderRadius: "18px"}}>
+	<footer className="bg-white  bg-green-900" style={{background:"#0d4b24", borderRadius: "18px", margin: "10px"}}>
     <div className="container px-6 py-0.5 mx-auto">
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10">
             <div className="sm:col-span-2">
                 <div style={{display: "flex", justifyContent: "space-between"}}>
                     <h1 className="max-w-lg text-xl font-semibold tracking-tight text-gray-800 xl:text-2xl  text-white">Rejoingnez notre newsletter et laissez-nous votre avis ! </h1>
@@ -35,7 +35,7 @@ const Footer: FC<FooterProps> = () => {
                 </div>
                 <div className="flex flex-col mx-auto mt-6 space-y-3 md:space-y-0 md:flex-row"
 					style={{gap:"30px"}}>
-					<form onSubmit={onSubmit}>
+					<form onSubmit={onSubmit} style={{display: "contents"}}>
 						<input id="email" type="text" className="px-4 py-2 text-white-900 bg-white border rounded-md  bg-gray-900  text-white-900 border-gray-600 focus:border-blue-400  focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300" placeholder="Email"/>
 						<input id="comments" type="text" className="px-4 py-2 text-white-900 bg-white border rounded-md  bg-gray-900  text-white-900  border-gray-600 focus:border-blue-400  focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300" placeholder="Commentaires"/>
 				
