@@ -11,22 +11,23 @@ export const Faq: FC = () => {
      <p className="text-3xl font-medium">Questions : </p>
      <div className="m-3">
        <QAToggleItem
-        question=" ⬇️ Do we ship plants?"
-        answer="Due to the risk of shipping plants in France's climate, we do not ship plants."
+        question=" ⬇️ Notre service client est-il joignable par téléphone ?"
+        answer="Notre service clients est uniquement joignable via le formulaire de contact et ne dispose pas de ligne téléphonique."
       />
     </div>
      
      
      <hr className="my-8"/>
      <div className="">
-        <h2 className="text-2xl font-bold text-gray-800 py-2.5">Please Note</h2>
+        <h2 className="text-2xl font-bold text-gray-800 py-2.5">À noter</h2>
         <p>
-        Orders are processed in the order they are received. Products are limited, and availability is listed on the site. 
-        We will do our best to keep the product availability as up-to-date as possible, adding new products as they are received in the shop. 
-        Sometimes our inventory is off and we will contact you should something not be available in your order. 
-        Check back regularly for product updates!
-        <hr className="my-8"/>
-        <p className="font-medium">If you have any questions please contact us at hello@plantshop.com</p>
+        Nous tenons à vous rappeler de faire preuve de prudence lors de vos interactions. Comme dans toute communauté en ligne, il est important de rester vigilant(e) et de signaler toute activité suspecte. Certaines personnes peuvent ne pas avoir des intentions honnêtes, et votre vigilance contribue à maintenir un environnement sûr pour tous les membres. N'hésitez pas à nous informer si vous rencontrez des comportements inappropriés ou des activités douteuses. Ensemble, nous pouvons garantir une expérience positive pour l'ensemble de la communauté.        <hr className="my-8"/>
+        <p className="font-medium">Si vous avez des questions, veuillez nous contacter à l'adresse hello@plantshop.com.
+
+
+
+
+</p>
         </p>
      </div>
 
