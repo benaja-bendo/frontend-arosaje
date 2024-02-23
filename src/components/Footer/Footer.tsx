@@ -7,20 +7,20 @@ const Footer: FC<FooterProps> = () => {
   
 	return (
 	
-	<footer className="bg-white  bg-green-900" style={{background:"#258a25"}}>
+	<footer className="bg-white  bg-green-900" style={{background:"#0d4b24", borderRadius: "18px"}}>
     <div className="container px-6 py-0.5 mx-auto">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
             <div className="sm:col-span-2">
-			<div>
-                <p className="font-semibold text-white-800  text-white"></p>
+                <div style={{display: "flex", justifyContent: "space-between"}}>
+                    <h1 className="max-w-lg text-xl font-semibold tracking-tight text-gray-800 xl:text-2xl  text-white">Rejoingnez notre newsletter et laissez-nous votre avis ! </h1>
+                    <div>
+                        <p className="font-semibold text-white-800  text-white"></p>
 
-                <div className="flex flex-col items-start mt-5 space-y-2">
-                    <a href="#" className="text-gray-600 transition-colors duration-300  text-gray-300  hover:text-blue-400 hover:underline hover:text-blue-500">Retour au haut de page</a>
-                    
+                        <div className="flex flex-col items-start space-y-2">
+                            <a href="#" style={{color: "#ffffff"}} className="text-gray-600 transition-colors duration-300  text-gray-300  hover:text-blue-400 hover:underline hover:text-blue-500">Retour au haut de page</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-                <h1 className="max-w-lg text-xl font-semibold tracking-tight text-gray-800 xl:text-2xl  text-white">Rejoingnez notre newsletter et laissez-nous votre avis ! </h1>
-
                 <div className="flex flex-col mx-auto mt-6 space-y-3 md:space-y-0 md:flex-row"
 					style={{gap:"30px"}}>
 					
@@ -37,10 +37,11 @@ const Footer: FC<FooterProps> = () => {
 
         </div>
         
-        <hr className="my-6 border-gray-200 md:my-8  border-gray-700"/>
+        <hr className="border-gray-200"
+            style={{marginTop: "10px", marginBottom: "10px"}}/>
         
         <div className="flex items-center justify-between">
-            <a href="#">
+            <a href="#" style={{marginBottom: "5px"}}>
                 <img className="w-auto h-7" src="https://svgsilh.com/svg/1320797.svg" alt=""/>
             </a>
             
