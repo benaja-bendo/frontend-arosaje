@@ -49,6 +49,7 @@ const routes: RouteObject[] = [
             {
                 path: "/add-plant",
                 Component: AddPlant,
+                action: AddPlanAction,
             },
             {
                 path: "/profil-user",
