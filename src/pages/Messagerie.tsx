@@ -92,7 +92,7 @@ export const Messagerie: FC = () => {
           </div>
           <div className="flex flex-col mt-8">
             <div className="flex flex-row items-center justify-between text-xs">
-              <span className="font-bold">Active Conversations</span>
+              <span className="font-bold">Conversations</span>
               <span className="flex items-center justify-center bg-gray-300 h-4 w-4 rounded-full">-</span>
             </div>
             <div className="flex flex-col space-y-1 mt-4 -mx-2 h-48 overflow-y-auto">
@@ -102,7 +102,7 @@ export const Messagerie: FC = () => {
                 >
                   H
                 </div>
-                <div className="ml-2 text-sm font-semibold">Henry Boyd</div>
+                <div className="ml-2 text-sm font-semibold">Henry Richard</div>
               </button>
               <button
                   className="flex flex-row items-center hover:bg-gray-100 rounded-xl p-2"
@@ -112,7 +112,7 @@ export const Messagerie: FC = () => {
                 >
                   M
                 </div>
-                <div className="ml-2 text-sm font-semibold">Marta Curtis</div>
+                <div className="ml-2 text-sm font-semibold">Marta Galvanez</div>
                 <div
                     className="flex items-center justify-center ml-auto text-xs text-white bg-red-500 h-4 w-4 rounded leading-none"
                 >
@@ -127,7 +127,7 @@ export const Messagerie: FC = () => {
                 >
                   P
                 </div>
-                <div className="ml-2 text-sm font-semibold">Philip Tucker</div>
+                <div className="ml-2 text-sm font-semibold">Philip Mounnier</div>
               </button>
               <button
                   className="flex flex-row items-center hover:bg-gray-100 rounded-xl p-2"
@@ -137,7 +137,7 @@ export const Messagerie: FC = () => {
                 >
                   C
                 </div>
-                <div className="ml-2 text-sm font-semibold">Christine Reid</div>
+                <div className="ml-2 text-sm font-semibold">Christine Salet</div>
               </button>
               <button
                   className="flex flex-row items-center hover:bg-gray-100 rounded-xl p-2"
@@ -147,7 +147,7 @@ export const Messagerie: FC = () => {
                 >
                   J
                 </div>
-                <div className="ml-2 text-sm font-semibold">Jerry Guzman</div>
+                <div className="ml-2 text-sm font-semibold">Jerry Lambont</div>
               </button>
             </div>
             <div className="flex flex-row items-center justify-between text-xs mt-6">
@@ -159,7 +159,7 @@ export const Messagerie: FC = () => {
                 <div className="flex items-center justify-center h-8 w-8 bg-indigo-200 rounded-full">
                   H
                 </div>
-                <div className="ml-2 text-sm font-semibold">Henry Boyd</div>
+                <div className="ml-2 text-sm font-semibold">Henry Richard</div>
               </button>
             </div>
           </div>
@@ -173,10 +173,10 @@ export const Messagerie: FC = () => {
                     <div className="flex flex-row items-center">
                       <div className="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0"
                            style={{background: "#22c55e"}}>
-                        A
+                        AD
                       </div>
                       <div className="relative ml-3 text-sm bg-white py-2 px-4 shadow rounded-xl">
-                        <div>Hey How are you today?</div>
+                        <div>Bonjour</div>
                       </div>
                     </div>
                   </div>
@@ -184,13 +184,11 @@ export const Messagerie: FC = () => {
                     <div className="flex flex-row items-center">
                       <div className="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0"
                            style={{background: "#22c55e"}}>
-                        A
+                        AD
                       </div>
                       <div className="relative ml-3 text-sm bg-white py-2 px-4 shadow rounded-xl">
                         <div>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit. Vel ipsa commodi illum saepe numquam maxime
-                          asperiores voluptate sit, minima perspiciatis.
+                        Comment-allez-vous ? 
                         </div>
                       </div>
                     </div>
@@ -200,12 +198,12 @@ export const Messagerie: FC = () => {
                       <div
                           className="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0"
                           style={{background: "#22c55e"}}>
-                        A
+                        HR
                       </div>
                       <div
                           className="relative mr-3 text-sm bg-indigo-100 py-2 px-4 shadow rounded-xl"
                       >
-                        <div>I'm ok what about you?</div>
+                        <div>Oui, je vais bien merci.  </div>
                       </div>
                     </div>
                   </div>
@@ -214,13 +212,13 @@ export const Messagerie: FC = () => {
                       <div
                           className="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0"
                           style={{background: "#22c55e"}}>
-                        A
+                        HR
                       </div>
                       <div
                           className="relative mr-3 text-sm bg-indigo-100 py-2 px-4 shadow rounded-xl"
                       >
                         <div>
-                          Lorem ipsum dolor sit, amet consectetur adipisicing. ?
+                        Dites moi en quoi je peux vous aider ?
                         </div>
                       </div>
                     </div>
@@ -230,12 +228,12 @@ export const Messagerie: FC = () => {
                       <div
                           className="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0"
                           style={{background: "#22c55e"}}>
-                        A
+                        AD
                       </div>
                       <div
                           className="relative ml-3 text-sm bg-white py-2 px-4 shadow rounded-xl"
                       >
-                        <div>Lorem ipsum dolor sit amet !</div>
+                        <div>Seriez-vous dispo vers 19h le mardi prochain pour récupérer la plante ?</div>
                       </div>
                     </div>
                   </div>
@@ -244,13 +242,13 @@ export const Messagerie: FC = () => {
                       <div
                           className="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0"
                           style={{background: "#22c55e"}}>
-                        A
+                        HR
                       </div>
                       <div
                           className="relative mr-3 text-sm bg-indigo-100 py-2 px-4 shadow rounded-xl"
                       >
                         <div>
-                          Lorem ipsum dolor sit, amet consectetur adipisicing. ?
+                          Oui, pouvez-vous me donner l'adresse du lieu du rdv svp ?
                         </div>
                         <div
                             className="absolute text-xs bottom-0 right-0 -mb-5 mr-2 text-gray-500"
@@ -265,14 +263,13 @@ export const Messagerie: FC = () => {
                       <div
                           className="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0"
                           style={{background: "#22c55e"}}>
-                        A
+                        AD
                       </div>
                       <div
                           className="relative ml-3 text-sm bg-white py-2 px-4 shadow rounded-xl"
                       >
                         <div>
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                          Perspiciatis, in.
+                          Je vous enverrai l'adresse et toutes mes coordonnées bientôt. Bonne soirée à vous !
                         </div>
                       </div>
                     </div>
@@ -282,7 +279,7 @@ export const Messagerie: FC = () => {
                       <div
                           className="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0"
                           style={{background: "#22c55e"}}>
-                        A
+                        AD
                       </div>
                       <div
                           className="relative ml-3 text-sm bg-white py-2 px-4 shadow rounded-xl"
