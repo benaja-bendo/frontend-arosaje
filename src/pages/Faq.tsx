@@ -4,7 +4,7 @@ import QAToggleItem from "../components/QAToggleItem/QAToggleItem";
 
 
 export const Faq: FC = () => {
- return <div className="">
+ return <div style={{padding: "18px"}}>
     <h1 className="text-5xl font-bold text-center"
         style={{margin: "18px"}}>Frequently Asked Questions</h1>
      <Category/>

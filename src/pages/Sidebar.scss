@@ -54,10 +54,9 @@
     margin-right: 10px;
   }  
   .logo1 {
-    width: 190px;
+    width: 100%;
+    margin-top: -20px;
     height: auto;
-    position: absolute;
-    bottom: 0;
   }
    @media screen and (max-width: 600px) {
     .sidebar-menu {
