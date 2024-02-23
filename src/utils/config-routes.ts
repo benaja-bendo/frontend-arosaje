@@ -7,6 +7,7 @@ export interface Route {
         create: string;
         show: (id: number) => string;
         me: (id: number) => string;
+        delete: (id: number) => string;
     };
     demand: {
         create: (id: number) => string;
@@ -22,6 +23,7 @@ const configRoutes: Route = {
         create: import.meta.env.VITE_API_ROUTE_PLANTS_CREATE || '/plants',
         show: (id: number) => `/plants/${id}`,
         me: (id: number) => `/plants/me/${id}`,
+        delete: (id: number) => `/plants/${id}`,
     },
     demand: {
         create: (id: number) => `/plants/${id}/demands`,
