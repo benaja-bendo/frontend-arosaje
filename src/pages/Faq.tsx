@@ -12,8 +12,8 @@ export const Faq: FC = () => {
      <p className="text-3xl font-medium">Questions : </p>
      <div className="m-3">
        <QAToggleItem
-        question=" ⬇️ Do we ship plants?"
-        answer="Due to the risk of shipping plants in France's climate, we do not ship plants."
+        question=" ⬇️ Notre service client est-il joignable par téléphone ?"
+        answer="Notre service clients est uniquement joignable via le formulaire de contact et ne dispose pas de ligne téléphonique."
       />
     </div>
      
