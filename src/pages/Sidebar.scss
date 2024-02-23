@@ -1,11 +1,11 @@
 /* Sidebar.scss */
 .sidebar {
     width: 200px;
-    background-color: rgb(37, 138, 37);
+    background-color: #258a25;
     transition: width 0.3s;
+    position: fixed;
+    bottom: 0;
      @media screen and (max-width: 600px) {
-      position: fixed;
-      bottom: 0;
       width: 100%;
       height: 100px;
     }
@@ -47,7 +47,7 @@
     text-decoration: underline;
   }
    .logo {
-    width: 35px;
+    width: 30px;
     height: auto;
     margin-right: 10px;
   }  
