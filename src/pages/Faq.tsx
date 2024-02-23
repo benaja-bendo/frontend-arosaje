@@ -26,7 +26,7 @@ export const Faq: FC = () => {
         Sometimes our inventory is off and we will contact you should something not be available in your order. 
         Check back regularly for product updates!
         <hr className="my-8"/>
-        <p className="font-medium">If you have any questions please contact us at hello@plantshop.com</p>
+        <p className="font-medium">Pour toutes questions, veuillez contacter hello@plantshop.com</p>
         </p>
      </div>
 
