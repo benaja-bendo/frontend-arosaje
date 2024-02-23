@@ -17,7 +17,7 @@ interface ShoppingListProps {
 }
 
 const ShoppingList: FC<ShoppingListProps> = ({ plantsData }) => {
-   return (<div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-2">
+   return (<div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-2 grid-rows-1">
      {plantsData?.map((plant, index) => (
          <PlantItem key={index} plantData={plant} />
          
