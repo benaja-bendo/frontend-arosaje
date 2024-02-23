@@ -9,49 +9,45 @@ export const AddPlant: FC = () => {
     const data = useActionData() as { status?: number };
     if (data?.status !== undefined) return <Navigate to={'/my-plantes'} />
     return (
-        <Form method="post" action="/add-plant" className="flex flex-col gap-4 p-4" encType={"multipart/form-data"}>
-            <div className="flex justify-between items-center h-full">
-                <h2 className={"text-2xl"}>
-                    Créer une plante
-                </h2>
-            </div>
-            <div className="flex flex-col gap-1">
-                <input name={"user_created"} type="hidden" value={currentUser?.id} />
-                <label>
-                    Nom de la plante:
-                    <input
-                        type="text"
-                        name={"name"}
-                        className="border-2 border-gray-300 p-2 rounded-md focus:outline-none focus:border-blue-500" />
-                </label>
-                <label>
-                    Description de la plante:
-                    <textarea
-                        name={"description"}
-                        className="border-2 border-gray-300 p-2 rounded-md focus:outline-none focus:border-blue-500" />
-                </label>
-                <label>
-                    Periode souhaitée:
-                    <input
-                        name={"date_begin"} type="datetime-local"
-                        className="border-2 border-gray-300 p-2 rounded-md focus:outline-none focus:border-blue-500" />
-                    <input
-                        name={"date_end"} type="datetime-local"
-                        className="border-2 border-gray-300 p-2 rounded-md focus:outline-none focus:border-blue-500" />
-                </label>
-                <label>
-                    Image de la plante:
-                    <input
-                        type="file"
-                        accept={"image/*"}
-                        name={"path_image"}
-                        className="border-2 border-gray-300 p-2 rounded-md focus:outline-none focus:border-blue-500" />
-                </label>
-                <button type="submit" className="bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600">
-                    Publier
-                </button>
-            </div>
-        </Form>
+        <div style={{ position: 'relative' }}>
+            <img className="logo1" src="./src/assets/fleur.jpg" alt="fleur" style={{ width: '100%', height: 'auto' }} />
+            <Form method="post" action="/add-plant" className="flex flex-col gap-4" style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', padding: "2rem", border: "1px solid #e5e7eb", borderRadius: "18px", backgroundColor: 'white', maxWidth: '400px' }} encType={"multipart/form-data"}>
+                <div className="flex justify-center items-center h-full">
+                    <h2 className={"text-2xl"}>
+                        Créer une plante
+                    </h2>
+                </div>
+                <div className="flex flex-col gap-3">
+                    <input name={"user_created"} type="hidden" value={currentUser?.id} />
+                    <label style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                        Nom de la plante:
+                        <input
+                            type="text"
+                            name={"name"}
+                            className="border border-gray-300 p-2 rounded-md focus:outline-none focus:border-blue-500" />
+                    </label>
+                    <label>
+                        Description de la plante:
+                        <textarea
+                            name={"description"}
+                            className="border border-gray-300 p-2 rounded-md focus:outline-none focus:border-blue-500"
+                            style={{ width: "100%" }} />
+                    </label>
+                    <label>
+                        Image de la plante:
+                        <input
+                            type="file"
+                            accept={"image/*"}
+                            name={"path_image"}
+                            style={{ width: "100%" }}
+                            className="border border-gray-300 p-2 rounded-md focus:outline-none focus:border-blue-500" />
+                    </label>
+                    <button type="submit" className="bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600" style={{ width: "100%", background: "#22c55e", color: "#ffffff" }}>
+                        Publier
+                    </button>
+                </div>
+            </Form>
+        </div>
     )
 }
 
