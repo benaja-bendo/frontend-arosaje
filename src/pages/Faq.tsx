@@ -5,7 +5,8 @@ import QAToggleItem from "../components/QAToggleItem/QAToggleItem";
 
 export const Faq: FC = () => {
  return <div className="">
-    <h1 className="text-5xl font-bold text-center">Frequently Asked Questions</h1>
+    <h1 className="text-5xl font-bold text-center"
+        style={{margin: "18px"}}>Frequently Asked Questions</h1>
      <Category/>
      <hr className="my-8"/>
      <p className="text-3xl font-medium">Questions : </p>
@@ -19,12 +20,9 @@ export const Faq: FC = () => {
      
      <hr className="my-8"/>
      <div className="">
-        <h2 className="text-2xl font-bold text-gray-800 py-2.5">Please Note</h2>
+        <h2 className="text-2xl font-bold text-gray-800 py-2.5">Note</h2>
         <p>
-        Orders are processed in the order they are received. Products are limited, and availability is listed on the site. 
-        We will do our best to keep the product availability as up-to-date as possible, adding new products as they are received in the shop. 
-        Sometimes our inventory is off and we will contact you should something not be available in your order. 
-        Check back regularly for product updates!
+        Les commandes sont traitées dans l'ordre de leur réception. Les produits sont limités et la disponibilité est indiquée sur le site. Nous ferons de notre mieux pour maintenir la disponibilité des produits aussi à jour que possible, en ajoutant de nouveaux produits au fur et à mesure de leur réception dans la boutique. Parfois, notre inventaire est épuisé et nous vous contacterons si quelque chose n'est pas disponible dans votre commande. Revenez régulièrement pour les mises à jour des produits !
         <hr className="my-8"/>
         <p className="font-medium">If you have any questions please contact us at hello@plantshop.com</p>
         </p>

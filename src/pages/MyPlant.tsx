@@ -9,7 +9,7 @@ export const MyPlant: FC = () => {
     return (
         <div className=" h-full">
             <nav>
-                <ul className="flex gap-1 pb-2 border-b-2">
+                <ul className="flex gap-1 pb-2">
                     <li>
                         <Link to="/profil-user"
                               className="flex items-center hover:bg-green-500 hover:text-white p-2 rounded-lg transition duration-300">
