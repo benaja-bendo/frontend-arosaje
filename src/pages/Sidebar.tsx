@@ -19,9 +19,7 @@ const Sidebar = () => {
             }
         };
 
-
         window.addEventListener('resize', handleResize);
-
 
         return () => window.removeEventListener('resize', handleResize);
     }, []);
@@ -33,25 +31,25 @@ const Sidebar = () => {
             </button>
             <ul className="sidebar-menu">
                 <li className="sidebar-menu-item">
-                    <Link to="/" className="flex items-center">
+                    <Link to="/" className="flex items-center" style={{gap: "10px"}}>
                         <img className="logo" src="./src/assets/home.svg" alt="home"/>
                         <strong>Accueil</strong>
                     </Link>
                 </li>
                 <li className="sidebar-menu-item">
-                    <Link to="/profil-user" className="flex items-center">
+                    <Link to="/profil-user" className="flex items-center" style={{gap: "10px"}}>
                         <img className="logo" src="./src/assets/profile.svg" alt="profil"/>
                         <strong> {currentUser?.name} </strong>
                     </Link>
                 </li>
                 <li className="sidebar-menu-item">
-                    <Link to="/messagerie" className="flex items-center">
+                    <Link to="/messagerie" className="flex items-center" style={{gap: "10px"}}>
                         <img className="logo" src="./src/assets/mail.svg" alt="messagerie"/>
                         <strong> Ma Messagerie </strong>
                     </Link>
                 </li>
                 <li className="sidebar-menu-item">
-                    <Link to="/faq" className="flex items-center">
+                    <Link to="/faq" className="flex items-center" style={{gap: "10px"}}>
                         <img className="logo" src="./src/assets/faq.svg" alt="faq"/>
                         <strong> FAQ </strong>
                     </Link>

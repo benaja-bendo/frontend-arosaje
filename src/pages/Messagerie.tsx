@@ -73,11 +73,11 @@ export const Messagerie: FC = () => {
           <div className="flex flex-row items-center justify-center h-12 w-full">
             <div
                 className="flex items-center justify-center rounded-2xl text-indigo-700 bg-indigo-100 h-10 w-10"
-            >
+                style={{background: "#258a25"}}>
               <svg
                   className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
+                  stroke="#ffffff"
+                  fill="#258a25"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
               >
@@ -171,7 +171,8 @@ export const Messagerie: FC = () => {
                 <div className="grid grid-cols-12 gap-y-2">
                   <div className="col-start-1 col-end-8 p-3 rounded-lg">
                     <div className="flex flex-row items-center">
-                      <div className="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0">
+                      <div className="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0"
+                           style={{background: "#258a25"}}>
                         A
                       </div>
                       <div className="relative ml-3 text-sm bg-white py-2 px-4 shadow rounded-xl">
@@ -181,7 +182,8 @@ export const Messagerie: FC = () => {
                   </div>
                   <div className="col-start-1 col-end-8 p-3 rounded-lg">
                     <div className="flex flex-row items-center">
-                      <div className="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0">
+                      <div className="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0"
+                           style={{background: "#258a25"}}>
                         A
                       </div>
                       <div className="relative ml-3 text-sm bg-white py-2 px-4 shadow rounded-xl">
@@ -197,7 +199,7 @@ export const Messagerie: FC = () => {
                     <div className="flex items-center justify-start flex-row-reverse">
                       <div
                           className="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0"
-                      >
+                          style={{background: "#258a25"}}>
                         A
                       </div>
                       <div
@@ -211,7 +213,7 @@ export const Messagerie: FC = () => {
                     <div className="flex items-center justify-start flex-row-reverse">
                       <div
                           className="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0"
-                      >
+                          style={{background: "#258a25"}}>
                         A
                       </div>
                       <div
@@ -227,7 +229,7 @@ export const Messagerie: FC = () => {
                     <div className="flex flex-row items-center">
                       <div
                           className="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0"
-                      >
+                          style={{background: "#258a25"}}>
                         A
                       </div>
                       <div
@@ -241,7 +243,7 @@ export const Messagerie: FC = () => {
                     <div className="flex items-center justify-start flex-row-reverse">
                       <div
                           className="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0"
-                      >
+                          style={{background: "#258a25"}}>
                         A
                       </div>
                       <div
@@ -262,7 +264,7 @@ export const Messagerie: FC = () => {
                     <div className="flex flex-row items-center">
                       <div
                           className="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0"
-                      >
+                          style={{background: "#258a25"}}>
                         A
                       </div>
                       <div
@@ -279,7 +281,7 @@ export const Messagerie: FC = () => {
                     <div className="flex flex-row items-center">
                       <div
                           className="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0"
-                      >
+                          style={{background: "#258a25"}}>
                         A
                       </div>
                       <div
@@ -288,7 +290,7 @@ export const Messagerie: FC = () => {
                         <div className="flex flex-row items-center">
                           <button
                               className="flex items-center justify-center bg-indigo-600 hover:bg-indigo-800 rounded-full h-8 w-10"
-                          >
+                              style={{background: "#258a25"}}>
                             <svg
                                 className="w-6 h-6 text-white"
                                 fill="none"
@@ -402,7 +404,7 @@ export const Messagerie: FC = () => {
               <div className="ml-4">
                 <button
                     className="flex items-center justify-center bg-indigo-500 hover:bg-indigo-600 rounded-xl text-white px-4 py-1 flex-shrink-0"
-                >
+                    style={{background: "#258a25"}}>
                   <span>Send</span>
                   <span className="ml-2">
                   <svg
