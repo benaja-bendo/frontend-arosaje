@@ -1,6 +1,6 @@
 // Sidebar
 import {Link} from "react-router-dom";
-import {useEffect, useState} from "react";
+import {useEffect} from "react";
 import "./Sidebar.scss";
 import {useCurrentUser} from "@/hook/use-current-user.ts";
 
@@ -50,7 +50,7 @@ const Sidebar = () => {
                 </li>
                 <li className="sidebar-menu-item">
                     <Link to="/faq" className="flex items-center" style={{gap: "10px"}}>
-                        <img className="logo" src="./src/assets/faq.svg" alt="faq"/>
+                        <img className="logo" src="./src/assets/faqq.svg" alt="faq"/>
                         <strong> FAQ </strong>
                     </Link>
                 </li>
