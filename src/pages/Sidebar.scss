@@ -1,85 +1,72 @@
-/* Sidebar.scss */
-
 .sidebar {
-  width: 200px;
-  background: linear-gradient(to bottom, #22c55e,#0d4b24);
-  transition: width 0.3s;
+  width: 100%;
+  height: 70px;
+  background: linear-gradient(to bottom, #22c55e, #0d4b24);
   position: fixed;
   bottom: 0;
-   @media screen and (max-width: 600px) {
-    width: 100%;
-    height: 100px;
-  }
-   @media screen and (min-width: 601px) {
-    height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: height 0.3s;
+
+  @media screen and (min-width: 601px) {
+    display: none;
   }
 }
 
-   .sidebar.closed {
-    width: 50px;
-  }
+.hide-toggle-button {
+  display: none;
+}
 
-   .hide-toggle-button {
-    display: none;
-  }
-  
-   .toggle-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: transparent;
-    border: none;
-    color: white;
-    cursor: pointer;
-  }
+.toggle-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
 
-   .sidebar-menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
+.sidebar-menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
 
-   .sidebar-menu-item {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    gap: 10px;
-  }
+.sidebar-menu-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
 
-   .sidebar-menu-item a {
+  a {
     color: white;
     text-decoration: none;
   }
 
-   .sidebar-menu-item a:hover {
+  a:hover {
     text-decoration: underline;
   }
+}
 
-   .logo {
-    width: 30px;
-    height: auto;
-    margin-right: 10px;
-  }
+.logo {
+  width: 30px;
+  height: auto;
+  margin-right: 0;
+}
 
-  .logo1 {
-    width: 100%;
-    margin-top: -20px;
-    height: auto;
-  }
+.logo1 {
+  width: 100%;
+  margin-top: -20px;
+  height: auto;
+}
 
-  @media screen and (max-width: 600px) {
-    .sidebar-menu {
-        display: flex;
-        justify-content: space-around;
-    }
-    .sidebar-menu-item {
-      flex-direction: row;
-      justify-content: space-around;
-    }
-     .logo {
-      margin-right: 0;
-    }
-     .sidebar-menu-item a {
-      display: none;
-    }
+@media screen and (min-width: 601px) {
+  .sidebar {
+    display: none;
   }
+}
