@@ -69,7 +69,7 @@ export const Messagerie: FC = () => {
     </div>*/}
     <div className="flex h-screen antialiased text-gray-800">
       <div className="flex flex-row h-full w-full overflow-x-hidden">
-        <div className="flex flex-col py-8 pl-6 pr-2 w-64 bg-white flex-shrink-0">
+        {/*<div className="flex flex-col py-8 pl-6 pr-2 w-64 bg-white flex-shrink-0">
           <div className="flex flex-row items-center justify-center h-12 w-full">
             <div
                 className="flex items-center justify-center rounded-2xl text-indigo-700 bg-indigo-100 h-10 w-10"
@@ -163,12 +163,12 @@ export const Messagerie: FC = () => {
               </button>
             </div>
           </div>
-        </div>
-        <div className="flex flex-col flex-auto h-full p-6">
-          <div className="flex flex-col flex-auto flex-shrink-0 rounded-2xl bg-gray-100 h-full p-4">
+        </div>*/}
+        <div className="flex flex-col flex-auto h-full p-3">
+          <div className="flex flex-col flex-auto flex-shrink-0 rounded-2xl bg-gray-100 h-full p-3 pb-16">
             <div className="flex flex-col h-full overflow-x-auto mb-4">
               <div className="flex flex-col h-full">
-                <div className="grid grid-cols-12 gap-y-2">
+                <div className="grid-cols-12 gap-y-2">
                   <div className="col-start-1 col-end-8 p-3 rounded-lg">
                     <div className="flex flex-row items-center">
                       <div className="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0"

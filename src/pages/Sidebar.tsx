@@ -32,26 +32,27 @@ const Sidebar = () => {
             <ul className="sidebar-menu">
                 <li className="sidebar-menu-item">
                     <Link to="/" className="flex items-center" style={{gap: "10px"}}>
-                        <img className="logo" src="./src/assets/home.svg" alt="home"/>
-                        <strong>Accueil</strong>
+                        <img className="logo" style={{width: "28px"}} src="./src/assets/home.svg" alt="home"/>
                     </Link>
                 </li>
                 <li className="sidebar-menu-item">
                     <Link to="/profil-user" className="flex items-center" style={{gap: "10px"}}>
-                        <img className="logo" src="./src/assets/profile.svg" alt="profil"/>
-                        <strong> {currentUser?.name} </strong>
+                        <img className="logo" style={{width: "32 px"}} src="./src/assets/profile.svg" alt="profil"/>
+                    </Link>
+                </li>
+                <li className="sidebar-menu-item">
+                    <Link to="/photo" className="flex items-center" style={{gap: "10px"}}>
+                        <img className="logo" src="./src/assets/photo.svg" alt="photo"/>
                     </Link>
                 </li>
                 <li className="sidebar-menu-item">
                     <Link to="/messagerie" className="flex items-center" style={{gap: "10px"}}>
                         <img className="logo" src="./src/assets/mail.svg" alt="messagerie"/>
-                        <strong> Ma Messagerie </strong>
                     </Link>
                 </li>
                 <li className="sidebar-menu-item">
                     <Link to="/faq" className="flex items-center" style={{gap: "10px"}}>
                         <img className="logo" src="./src/assets/faqq.svg" alt="faq"/>
-                        <strong> FAQ </strong>
                     </Link>
                 </li>
             </ul>
@@ -61,5 +62,3 @@ const Sidebar = () => {
 
 
 export default Sidebar;
-
-
