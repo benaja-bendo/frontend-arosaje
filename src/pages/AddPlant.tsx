@@ -34,6 +34,15 @@ export const AddPlant: FC = () => {
                             style={{ width: "100%" }} />
                     </label>
                     <label>
+                    Periode souhaitée:
+                    <input
+                        name={"date_begin"} type="datetime-local"
+                        className="border-2 border-gray-300 p-2 rounded-md focus:outline-none focus:border-blue-500" />
+                    <input
+                        name={"date_end"} type="datetime-local"
+                        className="border-2 border-gray-300 p-2 rounded-md focus:outline-none focus:border-blue-500" />
+                    </label>
+                    <label>
                         Image de la plante:
                         <input
                             type="file"
