@@ -16,6 +16,7 @@ import {registerAction, RegisterPage} from "@/pages/register/registerPage.tsx";
 import {MyPlant} from "@/pages/MyPlant.tsx";
 import {AddPlanAction, AddPlant} from "@/pages/AddPlant.tsx";
 import {Faq} from "@/pages/Faq.tsx";
+import {Photo} from "@/pages/Photo.tsx";
 
 
 const routes: RouteObject[] = [
@@ -41,6 +42,10 @@ const routes: RouteObject[] = [
             {
                 path: "/plantes/:id",
                 Component: ShowPlant,
+            },
+            {
+                path: "/photo",
+                Component: Photo,
             },
             {
                 path: "/my-plantes",
