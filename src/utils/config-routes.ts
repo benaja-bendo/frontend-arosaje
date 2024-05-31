@@ -12,6 +12,12 @@ export interface Route {
     demand: {
         create: (id: number) => string;
     };
+    conversations: {
+        getAll: string;
+        show: (id: number) => string;
+        create: string;
+        sendMessage: string;
+    }
 }
 
 const configRoutes: Route = {
@@ -28,6 +34,12 @@ const configRoutes: Route = {
     demand: {
         create: (id: number) => `/plants/${id}/demands`,
     },
+    conversations: {
+        getAll: import.meta.env.VITE_API_ROUTE_CONVERSATIONS_GET_ALL || '/conversations',
+        show: (id: number) => `/conversations/${id}`,
+        create: import.meta.env.VITE_API_ROUTE_CONVERSATIONS_CREATE || '/conversations',
+        sendMessage: import.meta.env.VITE_API_ROUTE_CONVERSATIONS_SEND_MESSAGE || '/messages/create',
+    }
 };
 
 export default configRoutes;
